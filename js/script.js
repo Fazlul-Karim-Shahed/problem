@@ -19,15 +19,15 @@ function loadJokes(e) {
         if (this.status === 200) {
             let data = JSON.parse(this.responseText);
             let jokes = data.value;
-            let output = "<ol>";
+            //let output = "<ol>";
 
             jokes.forEach(function (item) {
-                //console.log(item.joke);
-                output += `<li>${item.joke}</li>`;
+                console.log(item.joke);
+                //output += `<li>${item.joke}</li>`;
             });
-            output += "</ol>";
+            //output += "</ol>";
 
-            document.getElementById('output').innerHTML = output;
+            //document.getElementById('output').innerHTML = output;
             //console.log(jokes);
             //console.log(data);
         }
