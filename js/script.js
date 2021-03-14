@@ -11,9 +11,9 @@ function loadJokes(e) {
 
     xhr.open('GET', `https://api.icndb.com/jokes/random/${number}`, true);
 
-    xhr.onprogress = function () {
-        document.getElementById('output').innerHTML = "<h3>Loading......</h3>";
-    }
+    //xhr.onprogress = function () {
+        //document.getElementById('output').innerHTML = "<h3>Loading......</h3>";
+    //}
 
     xhr.onload = function () {
         if (this.status === 200) {
